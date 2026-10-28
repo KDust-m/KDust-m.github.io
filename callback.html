@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Authorization - Fortune Cheatkey Uploader</title><style>body{font-family:-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;max-width:720px;margin:0 auto;padding:24px 16px;line-height:1.7;color:#222;background:#fff}h1{font-size:1.6em}h2{font-size:1.15em;margin-top:1.8em}nav a{margin-right:12px}code{background:#f2f2f2;padding:2px 6px;border-radius:4px;word-break:break-all}footer{margin-top:3em;color:#777;font-size:.9em}</style></head><body><nav><a href="index.html">Home</a><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a></nav>
+<h1>Authorization complete</h1>
+<p>Copy the code below and paste it into the uploader.</p>
+<p><code id="code">(no code)</code></p>
+<p id="err" style="color:#c00"></p>
+<script>
+var q=new URLSearchParams(location.search);
+if(q.get("code"))document.getElementById("code").textContent=q.get("code");
+if(q.get("error"))document.getElementById("err").textContent="Error: "+q.get("error")+" "+(q.get("error_description")||"");
+</script>
+<footer>Contact: <a href="mailto:chae1789@gmail.com">chae1789@gmail.com</a> · Last updated: 2026-10-28</footer></body></html>
