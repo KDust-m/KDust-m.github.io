@@ -1,14 +1,19 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Home - Fortune Cheatkey Uploader</title><style>body{font-family:-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;max-width:720px;margin:0 auto;padding:24px 16px;line-height:1.7;color:#222;background:#fff}h1{font-size:1.6em}h2{font-size:1.15em;margin-top:1.8em}nav a{margin-right:12px}code{background:#f2f2f2;padding:2px 6px;border-radius:4px;word-break:break-all}footer{margin-top:3em;color:#777;font-size:.9em}</style></head><body><nav><a href="index.html">Home</a><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a></nav>
 <h1>Fortune Cheatkey Uploader</h1>
-<p>Fortune Cheatkey Uploader is a personal publishing tool used by the creator of the TikTok account <b>@galaxy.oracle_studio</b>. Every day it takes short vertical videos that the creator produced in advance (daily horoscope content: zodiac sign and Chinese zodiac rankings) and posts them to the creator's own TikTok account through the TikTok Content Posting API, using the caption and hashtags the creator wrote.</p>
+<p>Fortune Cheatkey Uploader is a personal publishing tool used by 은하 운세소 (Galaxy Oracle Studio), the creator of <b>@galaxy.oracle_studio</b> on TikTok, YouTube and Instagram. Every day it takes short vertical videos that the creator produced in advance (daily horoscope content: zodiac sign and Chinese zodiac rankings) and posts them to the creator's own accounts, using the caption and hashtags the creator wrote:</p>
+<ul>
+<li><b>TikTok</b> — through the TikTok Content Posting API</li>
+<li><b>YouTube</b> — as YouTube Shorts, through the <b>YouTube API Services</b> (YouTube Data API v3)</li>
+<li><b>Instagram</b> — as Reels, through the Instagram Graph API</li>
+</ul>
 <h2>How it works</h2>
 <ol>
-<li>The creator signs in with TikTok (Login Kit) and authorizes the <code>user.info.basic</code> and <code>video.publish</code> scopes.</li>
-<li>The tool shows the connected account's nickname and the privacy options TikTok allows for that account.</li>
-<li>The creator chooses the privacy level and the videos to post. The tool uploads the video files and captions to TikTok.</li>
-<li>The tool checks the publishing status and records which videos were posted so the same video is not posted twice.</li>
+<li>The creator signs in to each platform and authorizes the tool: TikTok Login Kit (<code>user.info.basic</code>, <code>video.publish</code>), Google OAuth 2.0 (<code>youtube.upload</code>, <code>youtube.readonly</code>), and Facebook Login (<code>instagram_basic</code>, <code>instagram_content_publish</code>).</li>
+<li>The tool shows which account or channel is connected.</li>
+<li>The creator chooses the videos and the privacy level. The tool uploads the video files with their titles, descriptions and captions.</li>
+<li>The tool checks the publishing result and records which videos were posted so the same video is not posted twice.</li>
 </ol>
-<p>The tool only posts to the account of the creator who authorized it. It does not read, collect or post to any other user's account.</p>
+<p>The tool only posts to the accounts of the creator who authorized it. It does not read, collect or post to any other user's account. See our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>.</p>
 <h2>한국어 안내</h2>
-<p>운세 치트키 업로더는 틱톡 계정 @galaxy.oracle_studio 운영자가 직접 제작한 운세 숏폼 영상을 TikTok Content Posting API로 본인 계정에 게시하는 개인용 도구입니다. 다른 사용자의 계정이나 데이터에는 접근하지 않습니다.</p>
+<p>운세 치트키 업로더는 은하 운세소(@galaxy.oracle_studio) 운영자가 직접 제작한 운세 숏폼 영상을 틱톡(TikTok Content Posting API), 유튜브(YouTube API 서비스), 인스타그램(Instagram Graph API)의 본인 계정에 게시하는 개인용 도구입니다. 다른 사용자의 계정이나 데이터에는 접근하지 않습니다.</p>
 <footer>Contact: <a href="mailto:chae1789@gmail.com">chae1789@gmail.com</a> · Last updated: 2026-10-28</footer></body></html>
