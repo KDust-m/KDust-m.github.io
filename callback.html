@@ -6,6 +6,8 @@
 <script>
 var q=new URLSearchParams(location.search);
 if(q.get("code"))document.getElementById("code").textContent=q.get("code");
+var m=(q.get("state")||"").match(/^local(\d+)-/);
+if(m&&q.get("code")){document.getElementById("code").textContent="Returning to the uploader...";location.replace("http://localhost:"+m[1]+"/oauth?"+new URLSearchParams({code:q.get("code"),state:q.get("state")}));}
 if(q.get("error"))document.getElementById("err").textContent="Error: "+q.get("error")+" "+(q.get("error_description")||"");
 </script>
 <footer>Contact: <a href="mailto:chae1789@gmail.com">chae1789@gmail.com</a> · Last updated: 2026-10-28</footer></body></html>
